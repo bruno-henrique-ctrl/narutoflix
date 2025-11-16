@@ -1,0 +1,68 @@
+.footer {
+    margin-top: 40px;
+    background: #111;
+    padding: 40px 20px 20px;
+    border-top: 3px solid #000;
+}
+
+.content {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.logoArea h2 {
+    margin-bottom: 8px;
+    font-size: 1.6rem;
+    color: #ff9c1a;
+    text-shadow: 0 0 8px rgba(255, 140, 0, 0.4);
+}
+
+.logoArea p {
+    color: #d9d9d9;
+}
+
+.links h3,
+.social h3 {
+    margin-bottom: 10px;
+    color: #ff9c1a;
+}
+
+.links a,
+.social a {
+    display: block;
+    margin-bottom: 6px;
+    color: #ff8c00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.links a:hover,
+.social a:hover {
+    color: #fff;
+    transform: translateX(4px);
+}
+
+.copy {
+    margin-top: 25px;
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+    color: #bbb;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+    .content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .links a:hover,
+    .social a:hover {
+        transform: translateX(0);
+    }
+}

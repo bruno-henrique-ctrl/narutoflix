@@ -1,0 +1,23 @@
+.wrapper {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navButtons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.playerWrapper iframe {
+    border: none;
+}
+
+@media (max-width: 600px) {
+    .navButtons a {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}

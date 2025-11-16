@@ -1,0 +1,109 @@
+.charImage {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: auto;
+    opacity: 0.25;
+    object-fit: contain;
+    filter: blur(1px);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* TÍTULO */
+.title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #ff7a00;
+    text-transform: uppercase;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+}
+
+/* SUBTÍTULOS */
+.sectionTitle {
+    margin-top: 26px;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+    color: #ff7a00;
+    border-left: 5px solid #ff7a00;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+/* CARD DE INFOS */
+.infoBlock {
+    background: rgba(31, 31, 31, 0.9);
+    padding: 18px;
+    border-radius: 12px;
+    border: 2px solid #000;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.75);
+    margin-bottom: 20px;
+}
+
+.infoBlock p {
+    color: #e6e6e6;
+    margin: 6px 0;
+}
+
+/* CARD DE JUTSU */
+.jutsuCard {
+    background: rgba(31, 31, 31, 0.9);
+    padding: 16px;
+    margin-top: 16px;
+    border-radius: 12px;
+    border: 2px solid #000;
+    transition: 0.3s ease;
+}
+
+.jutsuCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7);
+}
+
+.jutsuCard h4 {
+    margin: 0;
+    color: #ff7a00;
+    font-size: 1.2rem;
+}
+
+.jutsuCard span {
+    color: #ff9a2b;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.jutsuCard p {
+    margin-top: 8px;
+    color: #e6e6e6;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .page {
+        max-width: 100%;
+        padding: 1.2rem;
+    }
+
+    .title {
+        font-size: 1.9rem;
+    }
+
+    .sectionTitle {
+        font-size: 1.25rem;
+    }
+
+    .charImage {
+        width: 160px;
+        top: 10px;
+        right: 10px;
+        opacity: 0.15;
+    }
+
+    .infoBlock,
+    .jutsuCard {
+        padding: 14px;
+    }
+}
