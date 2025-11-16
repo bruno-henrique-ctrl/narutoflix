@@ -11,6 +11,10 @@
 
 @media (max-width: 600px) {
     .charGrid {
-        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow: auto;
+        align-items: center;
+        height: 35rem;
     }
 }
