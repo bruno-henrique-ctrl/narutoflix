@@ -70,6 +70,25 @@
     transform: translateX(-50%) translateY(0);
 }
 
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.icon p {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
 /* RESPONSIVO */
 @media (max-width: 600px) {
     .nav {
@@ -77,7 +96,9 @@
     }
 
     .container {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     /* ÍCONE HAMBURGUER */

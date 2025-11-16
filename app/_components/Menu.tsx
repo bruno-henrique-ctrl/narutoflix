@@ -36,6 +36,11 @@ const Menu = () => {
                     <div className={styles.line}></div>
                     <div className={styles.line}></div>
                 </label>
+
+                <div className={styles.icon}>
+                    <p>NARUTO NETZERA</p>
+                    <Image src="/imgs/icon.webp" alt="Logo Naruto Netzera" width={50} height={50} />
+                </div>
             </div>
 
             {(showMenu || isLarge) && (
