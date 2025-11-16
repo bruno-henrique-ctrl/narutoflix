@@ -9,7 +9,9 @@ const CharactersPage = async () => {
 
     return (
         <main className="page">
-            <BtnBack url="/" />
+            <div className={style.btn}>
+                <BtnBack url="/" />
+            </div>
 
             <div className={style.charGrid}>
                 {responseCharacters.data.map((char: characterType) => (
