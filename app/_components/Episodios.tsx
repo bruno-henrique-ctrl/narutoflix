@@ -18,12 +18,12 @@ const FecthEpisodios = ({ ep, anime }: { ep: string, anime: string }) => {
             </div>
 
             <div className={style.navButtons}>
-                <Link className="btn" href={`/episodios/${anime.toLowerCase()}/${Number(ep) < listaEpisodiosNaruto.length ? Number(ep) + 1 : listaEpisodiosNaruto.length}`}>
-                    Próximo
-                </Link>
-
                 <Link className="btn" href={`/episodios/${anime.toLowerCase()}/${ep > "1" ? Number(ep) - 1 : "1"}`}>
                     Anterior
+                </Link>
+
+                <Link className="btn" href={`/episodios/${anime.toLowerCase()}/${Number(ep) < listaEpisodiosNaruto.length ? Number(ep) + 1 : listaEpisodiosNaruto.length}`}>
+                    Próximo
                 </Link>
             </div>
         </div>
