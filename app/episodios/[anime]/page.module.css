@@ -2,6 +2,17 @@
     text-align: center;
 }
 
+.header img {
+    border-radius: 10px;
+    margin: auto;
+}
+
+.eps {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
 .container h1 {
     text-transform: uppercase;
     text-align: center;
@@ -13,7 +24,6 @@
 }
 
 .episodios h2 {
-    margin: 20px 0 10px;
     font-size: 1.4rem;
     text-align: center;
     font-weight: 700;
@@ -46,6 +56,10 @@
 }
 
 @media (max-width: 600px) {
+    .eps {
+        display: block;
+    }
+
     .episodios li a {
         font-size: 0.95rem;
         padding: 10px 14px;

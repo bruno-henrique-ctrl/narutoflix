@@ -38,7 +38,10 @@ const Menu = () => {
                 </label>
 
                 <div className={styles.icon}>
-                    <p>NARUTO NETZERA</p>
+                    <Link href="/">NARUTO <span>NETZERA</span></Link>
+                </div>
+
+                <div className={styles.icon}>
                     <Image src="/imgs/icon.webp" alt="Logo Naruto Netzera" width={50} height={50} />
                 </div>
             </div>

@@ -1,5 +1,4 @@
 .videoWrapper iframe {
-    border: none;
     height: 50vh;
     width: 100vw;
 }
@@ -7,13 +6,12 @@
 .title {
     font-size: 1.9rem;
     font-weight: 700;
-    letter-spacing: 1px;
+    color: #ff8c00;
 }
 
 .arco {
     font-size: 1.05rem;
     padding: 4px 10px;
-    color: #ffb264;
     opacity: 0.9;
 }
 
@@ -25,9 +23,5 @@
 
     .arco {
         font-size: 0.95rem;
-    }
-
-    .videoWrapper {
-        border-radius: 10px;
     }
 }

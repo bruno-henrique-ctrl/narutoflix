@@ -1,5 +1,5 @@
 .nav {
-    background: linear-gradient(90deg, #ff7a00, #ff9a2b);
+    background-color: #36393e;
     padding: 12px 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
     position: fixed;
@@ -21,12 +21,12 @@
 .menuList li {
     position: relative;
     text-align: center;
-    color: #000;
     font-weight: 600;
     font-size: 1.05rem;
     text-decoration: none;
     padding: 6px 10px;
     border-radius: 6px;
+    color: white;
     transition: all 0.5s ease;
     transition: 0.3s ease;
 }
@@ -53,7 +53,7 @@
 
     padding: 8px;
 
-    background: black;
+    background: #36393e;
     border-radius: 10px;
     border: 2px solid #00000055;
     transition: opacity 0.25s ease,
@@ -77,10 +77,13 @@
     padding-right: 20px;
 }
 
-.icon p {
-    font-size: 20px;
+.icon a {
+    font-size: 1.6rem;
     font-weight: bold;
-    color: black;
+}
+
+.icon span {
+    color: #ff7a00;
 }
 
 .icon img {
@@ -101,7 +104,6 @@
         align-items: center;
     }
 
-    /* ÍCONE HAMBURGUER */
     .check {
         display: none;
     }
@@ -119,7 +121,7 @@
 
     .line {
         height: 4px;
-        background: #000;
+        background: white;
         border-radius: 4px;
         transition: 0.3s;
     }
@@ -134,7 +136,7 @@
 
     .check:checked+.hamburger_label .line:nth-child(1) {
         transform: translateY(13px) rotate(45deg);
-        background: black;
+        background: white;
     }
 
     .check:checked+.hamburger_label .line:nth-child(2) {
@@ -143,7 +145,7 @@
 
     .check:checked+.hamburger_label .line:nth-child(3) {
         transform: translateY(-13px) rotate(-45deg);
-        background: black;
+        background: white;
     }
 
     .menuList {

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { api } from "../_api/api";
 import Link from "next/link";
 import style from "./Characters.module.css";
+import { url } from "inspector";
 
 const FetchCharacters = async ({ id }: { id: string }) => {
     const response = await api(id);
@@ -13,17 +14,9 @@ const FetchCharacters = async ({ id }: { id: string }) => {
             className={style.charCard}
         >
             <div>
-                <Image
-                    src={imageUrl}
-                    alt={response.data.name[0]}
-                    width={238}
-                    height={428}
-                    className={style.charCard}
-                    loading="eager"
-                    fetchPriority="high"
-                    priority
-                />
-                <p>{response.data.name}</p>
+                <div style={{ backgroundImage: `url('${imageUrl}')` }}>
+                    <p>{response.data.name}</p>
+                </div>
             </div>
         </Link>
     );
