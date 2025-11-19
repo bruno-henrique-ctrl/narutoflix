@@ -3,6 +3,7 @@ import type { characterType } from "../_types/characters";
 import style from './page.module.css';
 import FecthCharacters from "../_components/Characters";
 import BtnBack from "../_components/BtnBack";
+import Busca from "../_components/Busca";
 
 const CharactersPage = async () => {
     const responseCharacters = await apiFull();
@@ -12,6 +13,8 @@ const CharactersPage = async () => {
             <div className={style.btn}>
                 <BtnBack url="/" />
             </div>
+
+            <Busca />
 
             <div className={style.charGrid}>
                 {responseCharacters.data.map((char: characterType) => (

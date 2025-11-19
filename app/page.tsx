@@ -1,6 +1,7 @@
 import Link from "next/link";
 import FecthCharacters from "./_components/Characters";
 import style from "./page.module.css";
+import Continuar from "./_components/Continuar";
 
 const Home = () => {
   return (
@@ -8,7 +9,10 @@ const Home = () => {
       <section className={style.hero}>
         <h1>Entre no Mundo Ninja</h1>
         <p>Explore jutsus, personagens e episódios de toda saga Naruto.</p>
-        <Link className="btn" href="/episodios/naruto">Começar</Link>
+        <div>
+          <Continuar />
+          <Link className="btn" href="/episodios/naruto">Começar</Link>
+        </div>
       </section>
 
       <section className={style.characters}>

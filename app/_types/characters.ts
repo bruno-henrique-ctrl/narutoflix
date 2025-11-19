@@ -8,4 +8,4 @@ export type characterType = {
     father?: { name: string };
     village?: { name: string }
     jutsus?: { name: string, type: string, description: string }[];
-} 
+};

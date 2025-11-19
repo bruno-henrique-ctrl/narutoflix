@@ -2,6 +2,7 @@ import { listaEpisodiosNaruto, listaEpisodiosBoruto } from "@/app/_assets/listaE
 import FecthEpisodios from "@/app/_components/Episodios";
 import style from "./page.module.css";
 import BtnBack from "@/app/_components/BtnBack";
+import { Save } from "@/app/_components/Continuar";
 
 const pageEpisodios = async ({ params }: { params: { anime: string, ep: string } }) => {
     const { anime, ep } = await params
@@ -15,8 +16,11 @@ const pageEpisodios = async ({ params }: { params: { anime: string, ep: string }
     const lista = listas[anime]
     const episodio = lista.find(e => e.ep === ep);
 
+
+
     return (
         <main className={`${style.page} page`}>
+            <Save anime={episodio?.anime} ep={episodio?.ep} />
             <BtnBack url={`/episodios/${anime}`} />
 
             {episodio && (

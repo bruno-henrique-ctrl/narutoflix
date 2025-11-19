@@ -92,7 +92,6 @@
     border-radius: 50%;
 }
 
-/* RESPONSIVO */
 @media (max-width: 600px) {
     .nav {
         justify-content: space-between;
